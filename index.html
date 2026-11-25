@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comedor Caritas Felices | Villa Alba, La Plata</title>
+  <meta name="description" content="Comedor y merendero comunitario de Villa Alba, La Plata. Conocé nuestro trabajo y sumate a colaborar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ORGANISMO: encabezado -->
+  <header class="encabezado">
+    <a class="logo" href="#inicio"><img src="img/logo.png" alt="Comedor Caritas Felices, Barrio Villa Alba, La Plata" width="150" height="150"></a>
+    <nav class="navegacion" aria-label="Principal">
+      <details class="menu-movil">
+        <summary aria-label="Menú de navegación"><span class="menu-movil__icono" aria-hidden="true"><span></span></span></summary>
+        <ul class="menu menu-movil__lista">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#como-ayudar">Cómo ayudar</a></li>
+          <li><a href="#novedades">Novedades y campañas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#sistema-diseno">Sistema de diseño</a></li>
+        </ul>
+      </details>
+      <ul class="menu menu-escritorio">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#quienes-somos">Quiénes somos</a></li>
+        <li><a href="#como-ayudar">Cómo ayudar</a></li>
+        <li><a href="#novedades">Novedades y campañas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#sistema-diseno">Sistema de diseño</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="principal">
+
+    <!-- INICIO -->
+    <section id="inicio" class="seccion hero" aria-labelledby="titulo-inicio">
+      <div class="hero__texto">
+        <p class="hero__lema">Alimentar con amor, acompañar con el corazón</p>
+        <h1 id="titulo-inicio">Comedor<br>Caritas Felices</h1>
+        <p class="hero__descripcion">Somos un comedor y merendero comunitario de Villa Alba, La Plata. Damos asistencia alimentaria a niños y niñas en situación de vulnerabilidad social.</p>
+        <p class="acciones">
+          <a class="boton boton--primario" href="#como-ayudar">Doná ahora</a>
+          <a class="boton boton--secundario" href="#quienes-somos">Conocenos</a>
+        </p>
+      </div>
+      <figure class="imagen">
+        <img class="imagen__foto" src="img/portada.png" alt="Vecinos, voluntarios y niños frente al cartel del Comedor Caritas Felices" width="729" height="720">
+      </figure>
+    </section>
+
+    <section class="datos-destacados" aria-label="Datos del comedor">
+      <div class="dato-destacado"><span class="dato-destacado__icono" aria-hidden="true">📍</span><strong>Barrio Villa Alba</strong><span>La Plata</span></div>
+      <div class="dato-destacado"><strong class="dato-destacado__numero">+400</strong><span>personas asistidas<br>todos los días</span></div>
+      <div class="dato-destacado"><span class="dato-destacado__icono" aria-hidden="true">🗓️</span><strong>Desde 2020</strong></div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="seccion seccion--alt" aria-labelledby="titulo-quienes">
+      <h2 id="titulo-quienes" class="titulo-seccion">Conocenos</h2>
+
+      <div class="dos-columnas">
+        <div>
+          <h3>Nuestra historia</h3>
+          <p>Nacimos en el barrio de Villa Alba para que ningún chico se quede sin su plato de comida. Además del comedor y el merendero, organizamos colectas solidarias de alimentos, juguetes y otros elementos para los chicos.</p>
+        </div>
+
+        <!-- MOLÉCULA: carrusel  -->
+        <div class="carrusel" role="group" aria-roledescription="carrusel" aria-label="Fotos del comedor">
+          <input class="carrusel__radio" type="radio" name="foto" id="foto1" aria-label="Foto 1 de 3" checked>
+          <input class="carrusel__radio" type="radio" name="foto" id="foto2" aria-label="Foto 2 de 3">
+          <input class="carrusel__radio" type="radio" name="foto" id="foto3" aria-label="Foto 3 de 3">
+          <div class="carrusel__marco">
+            <figure class="carrusel__slide">
+              <img src="img/historia-1.jpg" alt="Niños y niñas merendando en la mesa del comedor" width="439" height="308">
+              <label class="carrusel__flecha carrusel__flecha--prev" for="foto3" aria-hidden="true">&lsaquo;</label>
+              <label class="carrusel__flecha carrusel__flecha--next" for="foto2" aria-hidden="true">&rsaquo;</label>
+            </figure>
+            <figure class="carrusel__slide">
+              <img src="img/historia-2.jpg" alt="Niños y voluntarios del comedor con un cartel que dice Villa Alba" width="439" height="308">
+              <label class="carrusel__flecha carrusel__flecha--prev" for="foto1" aria-hidden="true">&lsaquo;</label>
+              <label class="carrusel__flecha carrusel__flecha--next" for="foto3" aria-hidden="true">&rsaquo;</label>
+            </figure>
+            <figure class="carrusel__slide">
+              <img src="img/historia-3.png" alt="Niña sosteniendo un juego de damas" width="536" height="376">
+              <label class="carrusel__flecha carrusel__flecha--prev" for="foto2" aria-hidden="true">&lsaquo;</label>
+              <label class="carrusel__flecha carrusel__flecha--next" for="foto1" aria-hidden="true">&rsaquo;</label>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Separador decorativo -->
+      <div class="separador"><img src="img/manitos.png" alt="" width="364" height="225"></div>
+
+      <div class="dos-columnas">
+        <div>
+          <h3>Objetivos y actividades</h3>
+          <ul class="lista">
+            <li>Brindar asistencia alimentaria a niños y niñas.</li>
+            <li>Organizar colectas solidarias.</li>
+            <li>Sumar vecinos, familias y voluntarios a la causa.</li>
+          </ul>
+        </div>
+        <figure class="imagen">
+          <img class="imagen__foto" src="img/actividades.png" alt="Niños y adultos compartiendo una comida en una mesa al aire libre" width="445" height="360">
+        </figure>
+      </div>
+    </section>
+
+    <!-- CÓMO AYUDAR -->
+    <section id="como-ayudar" class="seccion seccion--ayuda" aria-labelledby="titulo-ayudar">
+      <h2 id="titulo-ayudar" class="titulo-seccion">¿Cómo ayudar?</h2>
+      <p class="ayuda__intro">Podés ayudarnos con:</p>
+      <div class="ayuda-lista">
+        <article class="ayuda-item">
+          <span class="ayuda-item__icono" aria-hidden="true">🥗</span>
+          <div class="ayuda-item__caja"><h3>Alimentos</h3><ul><li>Alimentos no perecederos</li><li>Alimentos frescos como verduras, carnes y pollo</li></ul></div>
+        </article>
+        <article class="ayuda-item">
+          <span class="ayuda-item__icono" aria-hidden="true">🧴</span>
+          <div class="ayuda-item__caja"><h3>Limpieza</h3><ul><li>Elementos de higiene personal</li><li>Artículos de limpieza</li></ul></div>
+        </article>
+        <article class="ayuda-item">
+          <span class="ayuda-item__icono" aria-hidden="true">✏️</span>
+          <div class="ayuda-item__caja"><h3>Materiales escolares</h3><ul><li>Útiles escolares</li><li>Mochilas</li><li>Libros</li><li>Artículos de librería</li></ul></div>
+        </article>
+        <article class="ayuda-item">
+          <span class="ayuda-item__icono" aria-hidden="true">🧸</span>
+          <div class="ayuda-item__caja"><h3>Juguetes y aportes</h3><ul><li>Juguetes nuevos o en buen estado</li><li>Aportes de dinero para sostener el comedor</li></ul></div>
+        </article>
+        <article class="ayuda-item">
+          <span class="ayuda-item__icono" aria-hidden="true">👕</span>
+          <div class="ayuda-item__caja"><h3>Ropa</h3><ul><li>Ropa para adultos y niños/as</li><li>Pañales y ropa de bebé</li></ul></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NOVEDADES Y CAMPAÑAS -->
+    <section id="novedades" class="seccion seccion--alt" aria-labelledby="titulo-novedades">
+      <h2 id="titulo-novedades" class="titulo-seccion">Campañas</h2>
+      <p class="aviso" role="note">Seguinos en Instagram para enterarte de las próximas colectas y actividades solidarias.</p>
+      <div class="rejilla rejilla--campanas">
+        <div class="contenedor-tarjeta">
+          <article class="tarjeta tarjeta--campana">
+            <img class="imagen__foto" src="img/campana-alimentos.jpg" alt="Niños y niñas almorzando fideos en una mesa del comedor" width="473" height="385">
+            <div><h3>Colecta de alimentos</h3><p>Sumamos alimentos no perecederos para acompañar las comidas del comedor.</p></div>
+          </article>
+        </div>
+        <div class="contenedor-tarjeta">
+          <article class="tarjeta tarjeta--campana">
+            <img class="imagen__foto" src="img/campana-juguetes.jpg" alt="Niña sosteniendo el juego de mesa Carrera en la Provincia" width="445" height="360">
+            <div><h3>Colecta de juguetes</h3><p>Reunimos juguetes en buen estado para que chicos y chicas puedan jugar y compartir.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADO A COLABORAR -->
+    <section class="seccion seccion--colaborar" aria-labelledby="titulo-colaborar">
+      <h2 id="titulo-colaborar">¿Querés colaborar?</h2>
+      <p>Cada ayuda cuenta y nos permite acompañar a quienes más lo necesitan.</p>
+      <p class="acciones">
+        <a class="boton boton--primario" href="https://www.instagram.com/comedorcaritasfelices1/" target="_blank" rel="noopener noreferrer">Quiero colaborar</a>
+        <a class="boton boton--claro" href="https://www.instagram.com/comedorcaritasfelices1/" target="_blank" rel="noopener noreferrer">Quiero ser voluntario/a</a>
+      </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto" class="titulo-seccion">Contacto</h2>
+      <div class="dos-columnas">
+        <address class="datos">
+          <p><strong>Ubicación</strong><br>Villa Alba, La Plata</p>
+          
+          <p><strong>Instagram</strong><br><a href="https://www.instagram.com/comedorcaritasfelices1/?hl=es" target="_blank" rel="noopener">@comedorcaritasfelices1</a></p>
+        </address>
+        <form class="formulario" action="#" method="post">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" required>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          <button class="boton boton--primario" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- DOCUMENTACIÓN INTEGRADA DEL SISTEMA DE DISEÑO -->
+    <section id="sistema-diseno" class="seccion seccion--alt documentacion" aria-labelledby="titulo-sistema-diseno">
+      <h2 id="titulo-sistema-diseno" class="titulo-seccion">Sistema de diseño</h2>
+      <p class="documentacion__bajada">Cómo se construyó la identidad visual y técnica de este sitio.</p>
+      <section class="documentacion__bloque" aria-labelledby="doc-caso"><h3 id="doc-caso">Sobre el caso</h3><p>Caritas Felices es un comedor y merendero comunitario de La Plata que brinda asistencia alimentaria a niños y niñas. El sitio se dirige a vecinos, familias, voluntarios, comercios y organizaciones que quieran conocer su trabajo o colaborar. Su objetivo es visibilizar la tarea del comedor, comunicar sus necesidades y convocar a donar o participar.</p></section>
+      <section class="documentacion__bloque" aria-labelledby="doc-referencia"><h3 id="doc-referencia">Análisis de referencia</h3><p>En la Etapa 1.2 se analizó el perfil de Instagram del Comedor Caritas Felices, ya que la organización no contaba con un sitio web propio. Sus publicaciones reunían información sobre la tarea del comedor, las personas a quienes acompaña, sus objetivos y las formas de colaborar. A partir de ese relevamiento se identificaron las necesidades de comunicación del proyecto y los contenidos que debía incluir el sitio.</p><p>En la Etapa 2, esa información se organizó y se transformó en una propuesta visual. La paleta cálida toma como referencia los colores presentes en algunas publicaciones de Instagram; también se definieron la tipografía y las escalas de tamaños y espaciado. El objetivo fue presentar la información de manera clara, facilitar que las personas encuentren cómo colaborar y lograr que el diseño funcione tanto en mobile como en pantallas más amplias.</p></section>
+      <section class="documentacion__bloque" aria-labelledby="doc-variables"><h3 id="doc-variables">Variables del sistema</h3><h4>Paleta de colores</h4>
+        <ul class="documentacion__muestras documentacion__muestras--colores">
+          <li><span class="documentacion__color" style="background:var(--color-fondo-principal)"></span><code>--color-fondo-principal</code><span>#FEF9E3</span></li><li><span class="documentacion__color" style="background:var(--color-accion-primaria)"></span><code>--color-accion-primaria</code><span>#F6BC3B</span></li><li><span class="documentacion__color" style="background:var(--color-texto-base)"></span><code>--color-texto-base</code><span>#182F25</span></li><li><span class="documentacion__color" style="background:var(--color-fondo-alternativo)"></span><code>--color-fondo-alternativo</code><span>#FED06B</span></li><li><span class="documentacion__color" style="background:var(--color-accion-secundaria)"></span><code>--color-accion-secundaria</code><span>#517754</span></li><li><span class="documentacion__color" style="background:var(--color-texto-alternativo)"></span><code>--color-texto-alternativo</code><span>#F28F49</span></li>
+        </ul>
+        <h4>Tipografía (valores efectivos del CSS)</h4><ul class="documentacion__valores"><li><code>--fuente</code><span>Montserrat, system-ui, sans-serif</span></li><li><code>--texto-principal</code><span>3.25rem</span></li><li><code>--texto-titulos</code><span>2.25rem</span></li><li><code>--texto-subtitulos</code><span>1.5rem</span></li><li><code>--texto-base</code><span>1rem</span></li><li><code>--texto-pequeno</code><span>1rem (16px)</span></li><li><code>--texto-minimo</code><span>1rem (16px)</span></li></ul>
+        <h4>Escala de espaciado</h4><ul class="documentacion__valores documentacion__valores--espacios"><li><code>--espacio-xs</code><span>4px · .25rem</span></li><li><code>--espacio-sm</code><span>8px · .5rem</span></li><li><code>--espacio-md</code><span>16px · 1rem</span></li><li><code>--espacio-lg</code><span>24px · 1.5rem</span></li><li><code>--espacio-xl</code><span>32px · 2rem</span></li></ul>
+      </section>
+      <section class="documentacion__bloque" aria-labelledby="doc-componentes"><h3 id="doc-componentes">Inventario de componentes</h3><div class="documentacion__componentes">
+        <article class="documentacion__muestra"><h4>Átomo · botón</h4><a class="boton boton--primario" href="#como-ayudar">Doná ahora</a><p><code>.boton</code> · <code>.boton--primario</code></p></article>
+        <article class="documentacion__muestra"><h4>Átomo · campo de texto</h4><label for="doc-email">Correo electrónico</label><input id="doc-email" type="email" placeholder="nombre@correo.com"><p><code>.formulario</code> · <code>input</code></p></article>
+        <article class="documentacion__muestra"><h4>Molécula · tarjeta de campaña</h4><article class="tarjeta tarjeta--campana"><div><h5>Colecta de alimentos</h5><p>Sumamos alimentos para acompañar las comidas.</p></div></article><p><code>.tarjeta</code> · <code>.tarjeta--campana</code></p></article>
+        <article class="documentacion__muestra"><h4>Organismo · encabezado</h4><div class="documentacion__encabezado">Caritas Felices <span>Inicio · Cómo ayudar · Contacto</span></div><p><code>.encabezado</code> · <code>.navegacion</code></p></article>
+        <article class="documentacion__muestra"><h4>Organismo · pie de página</h4><div class="documentacion__pie">Comedor Caritas Felices · La Plata</div><p><code>.pie</code> · <code>.pie__redes</code></p></article>
+      </div></section>
+      <section class="documentacion__bloque" aria-labelledby="doc-tecnica"><h3 id="doc-tecnica">Decisiones técnicas</h3><p>La estructura macro se organiza con CSS Grid: el documento distribuye encabezado, contenido principal y pie; las secciones usan grillas para columnas, tarjetas y datos destacados. Flexbox queda para alineaciones internas de componentes.</p><p>Las tarjetas de campaña se colocan dentro de <code>.contenedor-tarjeta</code>, que declara <code>container-type: inline-size</code>. Cuando el contenedor supera 24rem (384px), la tarjeta pasa de vertical a horizontal; en espacios angostos conserva la disposición vertical. Así se adapta al ancho disponible en su columna.</p><p><strong>Ajustes del diseño durante la implementación:</strong> el mockup de Figma sirvió como guía, pero algunos elementos se reorganizaron al llevarlos a HTML y CSS para mejorar la claridad y la adaptación a cada pantalla. En el formulario de contacto se ordenaron los campos para que resulte claro qué información ingresar; las tarjetas de donaciones —alimentos, ropa, útiles escolares y otros elementos— se acomodaron para facilitar la lectura tanto en web como en mobile. Resolver esa adaptación manteniendo una presentación clara fue uno de los principales desafíos.</p></section>
+    </section>
+  </main>
+
+  <!-- ORGANISMO: pie de página -->
+  <footer class="pie">
+    <p class="pie__marca">Comedor “Caritas Felices”</p>
+    <p>Villa Alba, La Plata</p>
+    <div class="pie__redes" aria-label="Redes sociales">
+      <a class="pie__red" href="https://www.instagram.com/comedorcaritasfelices1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Comedor Caritas Felices"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="pie__red-punto" cx="17.5" cy="6.7" r="1"/></svg></a>
+      <a class="pie__red" href="https://www.instagram.com/comedorcaritasfelices1/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Comedor Caritas Felices"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.5-4.9a8.4 8.4 0 1 1 16-3.9Z"/><path d="M8.4 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4 0 .6l-.5.7c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.7.8c.3.1.4.3.4.5 0 .4-.2 1.3-.8 1.8-.6.6-1.5.8-2.3.6-1-.2-2.3-.8-3.7-2-1.2-1.1-2-2.4-2.3-3.4-.3-.9-.1-1.9.5-2.7.2-.3.5-.5.8-.5Z"/></svg></a>
+    </div>
+    <nav aria-label="Pie de página">
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#como-ayudar">Cómo ayudar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <small>© Comedor Caritas Felices</small>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
